@@ -2,18 +2,26 @@
     display: inline-block;
     box-sizing: border-box;
     padding: 15px 40px;
-    justify-content: center;
-    align-items: center;
+    border: 1px solid @black;
     background-color: transparent;
-    text-decoration: none;
-    border: 1px solid #1F1E1E;
-    outline: none;
-    border-radius: 0;
+    color: @black;
+    font-family: "Open Sans",sans-serif;
     font-weight: 600;
-    font-size: 16;
+    font-size: 16px;
     line-height: 20px;
-    color: #1F1E1E;
-    transition: background-color 0.2s,color 0.2s;
+    text-align: center;
+    text-decoration: none;
+    justify-content: center;
+    transition: background-color 0.2s, color 0.2s;
     overflow: hidden;
     cursor: pointer;
+    outline: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0;
+    &:hover,
+    &:active {
+        background-color: @black;
+        color: @white;
+    }
 }
